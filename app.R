@@ -919,7 +919,7 @@ server <- function(input, output, session) {
     content = function(file) {
     #   #making temporary report file
      tempReport <- file.path(tempdir(), "report.rmd")
-     file.copy("report.rmd", tempReport, overwrite = TRUE)
+     file.copy("www/report.rmd", tempReport, overwrite = TRUE)
     # 
     #   #set up parameters to pass to report
      params <- list(n = c(
